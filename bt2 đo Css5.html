@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--  let celsius=+prompt('nhap vao do 0C:');-->
+<!--  console.log('celsius',celsius);-->
+<!--  let fahrenheit=9*celsius+32/5;-->
+<!--  console.log('fahrenheit', fahrenheit);-->
+<!--  alert('fahrenheit:  '+fahrenheit);-->
+<!--</script>-->
+<lable>nhap vao 0C:</lable>
+<input type="text" id="celsius">
+<button onclick="fahrenheit()">xem ket qua</button>
+<p id="fahrenheit"></p>
+<script>
+    function fahrenheit() {
+        let celsius = +document.getElementById('celsius').value;
+        console.log('celsius:', celsius);
+        let fahrenheit = 9 * celsius + 32 / 5;
+        document.getElementById('fahrenheit').innerHTML = 'fahrenheit: ' + fahrenheit;
+    }
+</script>
+</body>
+</html>

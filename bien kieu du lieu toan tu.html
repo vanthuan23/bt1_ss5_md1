@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let vatLy= +prompt('dien vat ly');-->
+<!--    let hoaHoc= +prompt('dien Hoa hoc');-->
+<!--    let sinhHoc= +prompt('dien sinh hoc');-->
+<!--    let sum=vatLy+hoaHoc+sinhHoc;-->
+<!--    let diemTb= sum/3;-->
+<!--    alert('diemTb: '+diemTb);-->
+<!--    alert('TongDiem: '+sum);-->
+<!--</script>-->
+
+<lable>Nhap diem ly:</lable>
+<input type="text" id="Ly">
+<lable>Nhap dien hoa:</lable>
+<input type="text" id="Hoa">
+<lable>Nhap diem sinh:</lable>
+<input type="text" id="Sinh">
+<button onclick="tongDiemVaAvg()">In ra tong diem va avg</button>
+<p id="tongDiem"></p>
+<p id="avg"></p>
+<script>
+    function tongDiemVaAvg() {
+        let ly = +document.getElementById('Ly').value;
+        let hoa = +document.getElementById('Hoa').value;
+        let sinh = +document.getElementById('Sinh').value;
+        let tongDiem = ly + hoa + sinh;
+        document.getElementById('tongDiem').innerHTML = 'tong diem:' + tongDiem;
+        let avg = tongDiem / 3;
+        document.getElementById('avg').innerHTML = 'avg:' + avg;
+    }
+</script>
+</body>
+</html>

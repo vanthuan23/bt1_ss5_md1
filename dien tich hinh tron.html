@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let R = +prompt('nhap vao R:');-->
+<!--    const PI = Math.PI;-->
+<!--    let chuVi = 2 * PI * R;-->
+<!--    alert('Chu Vi :' + chuVi);-->
+<!--</script>-->
+<lable>nhap vao R:</lable>
+<input type="text" id="R">
+<button onclick="chuVi()">ket qua</button>
+<p id="chuVi"></p>
+<p id="dienTich"></p>
+<script>
+    function chuVi(){
+        let R=+document.getElementById('R').value;
+        console.log('R: ',R);
+        const PI=Math.PI;
+        let chuVi=2*PI*R;
+        let dienTich=PI*R*R;
+        document.getElementById('chuVi').innerHTML='Chu Vi :'+chuVi;
+        document.getElementById('dienTich').innerHTML='Dien Tich: '+dienTich;
+    }
+
+</script>
+</body>
+</html>
